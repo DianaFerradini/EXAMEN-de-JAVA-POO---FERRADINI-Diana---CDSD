@@ -35,11 +35,7 @@ public class App {
 
                 case 4: //Afficher le tarif moyen de location
                     double tarifMoyenLocation = VehiculeService.tarifMoyenLocation();
-                    if (tarifMoyenLocation == 0) {
-                        System.out.println("Le parc automobile est actuellement vide");
-                    } else {
-                        MainView.afficherTarifMoyenLocation(tarifMoyenLocation);
-                    }
+                    MainView.afficherTarifMoyenLocation(tarifMoyenLocation);
                     break;
 
                 case 5:

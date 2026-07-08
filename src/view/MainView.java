@@ -41,7 +41,11 @@ private static final Scanner scanner = new Scanner(System.in);
     }
 
     public static void afficherTarifMoyenLocation(double tarifMoyenLocation) {
-        System.out.println( "Tarif moyen : " + tarifMoyenLocation + " FCFA / jour");
+        if (tarifMoyenLocation == 0) {
+            System.out.println("Le parc automobile est actuellement vide");
+        } else {
+            System.out.println( "Tarif moyen : " + tarifMoyenLocation + " FCFA / jour");
+        }
     }
 
     public static String saisieChaine(String msg) {
